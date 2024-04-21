@@ -170,7 +170,7 @@ const Live = ({ canvasRef }: Props) => {
       onPointerUp={handlePointerUp}
       className="h-[100vh] w-full flex justify-center items-center text-center"
     >
-      <canvas ref={canvasRef} />
+      <canvas className="border-2" ref={canvasRef} />
 
       {reactions.map((r) => (
         <FlyingReaction
